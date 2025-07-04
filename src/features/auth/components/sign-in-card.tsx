@@ -18,6 +18,7 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
+import { PasswordInput } from "@/components/ui/password-input";
 import { signUpWithGithub, signUpWithGoogle } from "@/lib/oauth";
 
 import { loginSchema } from "../schemas";
@@ -71,8 +72,7 @@ export const SignInCard = () => {
               render={({ field }) => (
                 <FormItem>
                   <FormControl>
-                    <Input
-                      type="password"
+                    <PasswordInput
                       placeholder="Enter password"
                       {...field}
                     />

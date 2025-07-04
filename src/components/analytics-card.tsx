@@ -29,12 +29,12 @@ export const AnalyticsCard = ({
   return (
     <Card className="shadow-none border-none w-full">
       <CardHeader>
-        <div className="flex items-center gap-x-2.5">
-          <CardDescription className="flex items-center gap-x-2 font-medium overflow-hidden">
+        <div className="flex items-center gap-x-1.5">
+          <CardDescription className="flex items-center gap-x-1 font-medium overflow-hidden">
             <span className="truncate text-base">{title}</span>
           </CardDescription>
-          <div className="flex items-center gap-x-1">
-            <Icon className={cn("size-4", iconColor)} />
+          <div className="flex items-center gap-x-0.5">
+            <Icon className={cn("size-2", iconColor)} />
             <span
               className={cn(
                 "truncate text-base font-medium",
@@ -45,7 +45,7 @@ export const AnalyticsCard = ({
             </span>
           </div>
         </div>
-        <CardTitle className="text-3xl font-semibold">{value}</CardTitle>
+        <CardTitle className="text-lg font-semibold">{value}</CardTitle>
       </CardHeader>
     </Card>
   );
